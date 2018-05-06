@@ -24,6 +24,7 @@ import {
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
 import { MatFormField, MatInputModule, MatButton, MatButtonModule, MatFormFieldModule, MatFormFieldControl } from '@angular/material';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { MatFormField, MatInputModule, MatButton, MatButtonModule, MatFormFieldM
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
+    UserManagementComponent,
 
   ],
   providers: [],
