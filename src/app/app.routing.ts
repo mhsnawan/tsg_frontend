@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 const routes: Routes =[
   {
@@ -20,6 +21,7 @@ const routes: Routes =[
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
   }]},
     // { path: 'dashboard',      component: DashboardComponent },
+    // { path: 'user-management',   component: UserManagementComponent },
     // { path: 'user-profile',   component: UserProfileComponent },
     // { path: 'table-list',     component: TableListComponent },
     // { path: 'typography',     component: TypographyComponent },

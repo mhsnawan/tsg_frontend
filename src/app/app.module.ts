@@ -11,6 +11,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
 import { TypographyComponent } from './typography/typography.component';
@@ -24,7 +25,7 @@ import {
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
 import { MatFormField, MatInputModule, MatButton, MatButtonModule, MatFormFieldModule, MatFormFieldControl } from '@angular/material';
-import { UserManagementComponent } from './user-management/user-management.component';
+
 
 @NgModule({
   imports: [
@@ -50,7 +51,6 @@ import { UserManagementComponent } from './user-management/user-management.compo
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
-    UserManagementComponent,
 
   ],
   providers: [],
