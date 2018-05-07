@@ -4,30 +4,41 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-danger">
-                        <h4 class="card-title ">Team Members</h4>
+                        <div class="row">
+                            <h4 class="card-title col-md-4">Team Members</h4>
+                        </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <div class="row">
-                                <div class="offset-md-8 col-md-4">
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">Add Members</button>
+                                </div>
+                                <div class="offset-md-3 col-md-4">
+                                    <button class="btn btn-default btn-sm">Active Members</button>
+                                    <button class="btn btn-default btn-sm">Inactive Members</button>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="input-group">
                                         <input type="text" placeholder="Search" class="form-control">
-                                        <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button">Go!</button>
+                                        <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button>
                                         </span>
                                     </div>
                                 </div>
                             </div>
+                            <br>
                             
-                            <table class="table table-hover table-striped table-bordered table-list" id="example">
-                                <thead class="text-primary">
-                                    <th></th>
+                        <table class="table table-hover thead-light">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="text-center">#</th>
                                     <th>Name</th>
                                     <th>Job Title</th>
                                     <th>Email</th>
                                     <th>Phone</th>
                                     <th>Action</th>
-                                </thead>
+                                </tr>
+                            </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
@@ -35,9 +46,16 @@
                                         <td>UI & UX</td>
                                         <td>abc@tsg.com</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -46,9 +64,16 @@
                                         <td>Software Developer</td>
                                         <td>abc@tsg.com</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -57,9 +82,16 @@
                                         <td>Purchasing</td>
                                         <td>abc@tsg.com</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -68,9 +100,16 @@
                                         <td>Project Manager</td>
                                         <td>abc@tsg.com</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -79,9 +118,16 @@
                                         <td>Marketing</td>
                                         <td>abc@tsg.com</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -90,20 +136,20 @@
                                         <td>Chile</td>
                                         <td>Gloucester</td>
                                         <td class="text-primary">111-785-987</td>
-                                        <td><a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-info btn-simple">
+                                                <i class="material-icons">person</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
-                                    </tr>
-                                </tbody>
-                                <ul class="pagination">
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                </ul>
-                            </table>
+                                        </tr>
+                                    </tbody>
+                                </table>
                         </div>
                     </div>
                 </div>
@@ -111,4 +157,22 @@
         </div>
     </div>
   </div>
-  
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
