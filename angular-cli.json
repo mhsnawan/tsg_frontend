@@ -32,7 +32,7 @@
           "../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
           "../node_modules/bootstrap-notify/bootstrap-notify.js",
           "../node_modules/chartist/dist/chartist.js",
-          "../assets/documentation/js/modals.js"
+          "../assets/documentation/js/datetimepicker.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
